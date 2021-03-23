@@ -1,3 +1,4 @@
+# create matrix
 makeCacheMatrix = function(a = matrix()){
   inv = NULL
   set = function(m){
@@ -10,7 +11,7 @@ makeCacheMatrix = function(a = matrix()){
   list(set = set, get = get, 
        SV = SV,GV =GV)
 }
-
+# returning inverse
 cacheSolve = function(a,...){
   inv = a$GV()
   if (!is.null(inv)){
